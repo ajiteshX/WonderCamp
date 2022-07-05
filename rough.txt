@@ -1,0 +1,17 @@
+RESTFUL ROUTES
+
+name    url         verb    desc.
+________________________________________________________________
+INDEX   /dogs       GET     display a list of all dogs
+NEW     /dogs/new   GET     display form to make a new dog
+CREATE  /dogs       POST    add new dog to DB
+SHOW    /dogs/:id   GET     shows info about one dog
+
+<% campground.comments.forEach(function(comment){ %>
+    <p>
+        <strong> <%= comment.author %> </strong> -
+    </p>
+    <p>
+        <%= comment.text %>
+    </p>
+<% }) %>
